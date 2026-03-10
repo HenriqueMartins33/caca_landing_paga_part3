@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════
-   VARIÁVEIS E RESET
+   VARIABLES AND RESET
    ═══════════════════════════════════════════ */
 
 :root {
@@ -71,7 +71,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   BOTÕES
+   BUTTONS
    ═══════════════════════════════════════════ */
 
 .btn {
@@ -133,7 +133,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   HERO / CABEÇALHO
+   HERO / HEADER
    ═══════════════════════════════════════════ */
 
 .hero {
@@ -316,7 +316,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   MISSÃO / APRESENTAÇÃO
+   MISSION / PRESENTATION
    ═══════════════════════════════════════════ */
 
 .mission {
@@ -373,7 +373,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   ESTATÍSTICAS
+   STATISTICS
    ═══════════════════════════════════════════ */
 
 .stats {
@@ -447,7 +447,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   ÁREAS DE INVESTIGAÇÃO
+   RESEARCH AREAS
    ═══════════════════════════════════════════ */
 
 .areas {
@@ -522,7 +522,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   CONSÓRCIO / PARCEIROS
+   CONSORTIUM / PARTNERS
    ═══════════════════════════════════════════ */
 
 .consortium {
@@ -597,7 +597,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   APOIO À INVESTIGAÇÃO
+   RESEARCH SUPPORT
    ═══════════════════════════════════════════ */
 
 .research {
@@ -637,7 +637,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   OPORTUNIDADES
+   OPPORTUNITIES
    ═══════════════════════════════════════════ */
 
 .opportunities {
@@ -716,7 +716,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   AVISO
+   NOTICE
    ═══════════════════════════════════════════ */
 
 .notice {
@@ -761,7 +761,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   NOTÍCIAS
+   NEWS
    ═══════════════════════════════════════════ */
 
 .news {
@@ -879,7 +879,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   CONTACTOS E LOCALIZAÇÃO
+   CONTACTS AND LOCATION
    ═══════════════════════════════════════════ */
 
 .contact {
@@ -968,7 +968,7 @@ img {
   display: block;
 }
 
-/* ─── Formulário ─── */
+/* ─── Form ─── */
 
 .contact-form-wrapper {
   background: var(--paper);
@@ -1029,7 +1029,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   RODAPÉ
+   FOOTER
    ═══════════════════════════════════════════ */
 
 .site-footer {
@@ -1100,7 +1100,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   RESPONSIVO — DESKTOP / TABLET
+   RESPONSIVE — DESKTOP / TABLET
    ═══════════════════════════════════════════ */
 
 @media (min-width: 768px) {
@@ -1163,7 +1163,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   RESPONSIVO — TABLET / MOBILE
+   RESPONSIVE — TABLET / MOBILE
    ═══════════════════════════════════════════ */
 
 @media (max-width: 860px) {
@@ -1209,7 +1209,7 @@ img {
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1), 0 0 0 10000px rgba(0, 0, 0, 0.4);
   }
 
-  /* Animação do Hamburger */
+  /* Hamburger Animation */
   .menu-checkbox:checked~.menu-button .hamburger {
     background: transparent;
   }
@@ -1262,7 +1262,7 @@ img {
     padding-bottom: 44px;
   }
 
-  /* Missão */
+  /* Mission */
   .mission {
     width: min(100% - 28px, 760px);
     padding: 28px 24px;
@@ -1307,13 +1307,13 @@ img {
     font-size: 0.9rem;
   }
 
-  /* Áreas */
+  /* Areas */
   .areas-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
   }
 
-  /* Consórcio */
+  /* Consortium */
   .consortium {
     padding: 48px 0;
   }
@@ -1359,7 +1359,7 @@ img {
     font-size: 1rem;
   }
 
-  /* Oportunidades */
+  /* Opportunities */
   .opportunities-grid {
     grid-template-columns: 1fr;
     gap: 18px;
@@ -1404,7 +1404,7 @@ img {
     font-size: 0.95rem;
   }
 
-  /* Contactos */
+  /* Contacts */
   .contact {
     width: min(100% - 28px, 760px);
     padding: 40px 0;
@@ -1441,7 +1441,7 @@ img {
 }
 
 /* ═══════════════════════════════════════════
-   RESPONSIVO — MOBILE PEQUENO
+   RESPONSIVE — SMALL MOBILE
    ═══════════════════════════════════════════ */
 
 @media (max-width: 620px) {
