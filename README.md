@@ -67,6 +67,9 @@ O objetivo principal desta fase foi a **melhoria interativa e dinâmica da landi
 
 ## c) Identidade Visual e Design
 
+O nosso protótipo base (mockup) foi desenvolvido no Figma, onde definimos as escolhas estruturais e visuais. Pode ser consultado através do seguinte link:
+[Figma do Projeto TE1](https://www.figma.com/design/SNOlEnaHQc2sBNPphX713Q/TE1?node-id=0-1&t=g3v6JbHW5wJggUtT-1)
+
 A identidade visual mantém a coerência com a fase anterior, focando-se em transmitir confiança e profissionalismo no contexto clínico-académico.
 
 ## d) Acessibilidade e Responsividade
@@ -156,6 +159,9 @@ The main goal of this phase was the **interactive and dynamic improvement of the
     -   Responsive design maintained and improved.
 
 ## c) Visual Identity and Design
+
+Our base prototype (mockup) was developed in Figma, where we defined the structural and visual choices. It can be accessed through the following link:
+[TE1 Project Figma](https://www.figma.com/design/SNOlEnaHQc2sBNPphX713Q/TE1?node-id=0-1&t=g3v6JbHW5wJggUtT-1)
 
 The visual identity maintains consistency with the previous phase, focusing on conveying trust and professionalism in the clinical-academic context.
 

@@ -1197,11 +1197,6 @@ img {
     font-size: 1.14rem;
   }
 
-  .stats {
-    width: min(100% - 80px, 1120px);
-    padding: 48px 52px;
-  }
-
   .stats-copy p {
     font-size: 1.06rem;
   }
@@ -1542,11 +1537,6 @@ img {
 
   .hero-actions {
     flex-wrap: wrap;
-  }
-
-  .stats {
-    width: min(100% - 20px, 420px);
-    padding: 22px 18px;
   }
 
   .stats-copy h2 {
