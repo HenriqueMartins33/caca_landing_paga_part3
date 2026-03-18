@@ -1,6 +1,7 @@
 import { HeroCarousel } from './modules/HeroCarousel.js';
 import { ScrollManager } from './modules/ScrollManager.js';
 import { TiltEffect } from './modules/TiltEffect.js';
+import { ContactForm } from './modules/ContactForm.js';
 
 /**
  * Main application file.
@@ -20,4 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'assets/images/caca-1',
     'assets/images/caca-2'
   ]);
+
+  // 4. Initialize Contact Form (Iulia)
+  new ContactForm('#contactForm');
 });
