@@ -22,6 +22,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 
+  <!-- Chart.js for Data Visualization (PI2 - David/Shared) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <link rel="stylesheet" href="style.css" />
   <style>
     /* Inlined style-interactive.css to reduce render-blocking requests */
@@ -165,10 +168,8 @@
       will-change: transform;
     }
   </style>
-  <!-- Código modularizado (Substitui script.js para Adriano) -->
+  <!-- Código modularizado (Substitui script.js para Adriano, Iulia e David) -->
   <script type="module" src="js/main.js"></script>
-  <!-- Mantemos script.js apenas para o GSAP do David temporariamente -->
-  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -319,6 +320,31 @@
           </article>
         </div>
       </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ --> 
+    <!--  DATA INSIGHTS (GRÁFICO PREMIUM)        --> 
+    <!-- ═══════════════════════════════════════════ --> 
+    <section class="insights" id="dados"> 
+      <div class="insights-inner"> 
+        <div class="insights-copy"> 
+          <span class="insights-tag">Transparência & Crescimento</span> 
+          <h2>Evolução do Apoio à Investigação</h2> 
+          <p> 
+            Ao longo dos últimos 5 anos, o compromisso do CACA com a inovação 
+            clínica nos Açores cresceu substancialmente. Em 2025, atingimos o 
+            marco histórico de <strong>€50.000</strong> em financiamento 
+            direto a projetos, publicações e ao biobanco regional. 
+          </p> 
+          <ul class="insights-list"> 
+            <li><span class="material-symbols-outlined" aria-hidden="true">trending_up</span> Crescimento progressivo desde 2021</li> 
+            <li><span class="material-symbols-outlined" aria-hidden="true">science</span> Foco na investigação translacional</li> 
+          </ul> 
+        </div> 
+        <div class="insights-visual"> 
+          <canvas id="investmentChart" aria-label="Gráfico de Evolução do Apoio à Investigação" role="img"></canvas> 
+        </div> 
+      </div> 
     </section>
 
     <!-- ═══════════════════════════════════════════ -->

@@ -2,6 +2,8 @@ import { HeroCarousel } from './modules/HeroCarousel.js';
 import { ScrollManager } from './modules/ScrollManager.js';
 import { TiltEffect } from './modules/TiltEffect.js';
 import { ContactForm } from './modules/ContactForm.js';
+import { AnimationManager } from './modules/Animations.js';
+import { ChartManager } from './modules/ChartManager.js';
 
 /**
  * Main application file.
@@ -24,4 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 4. Initialize Contact Form (Iulia)
   new ContactForm('#contactForm');
+
+  // 5. Initialize Animations (David)
+  // Small delay to ensure DOM is ready and layout stabilized
+  setTimeout(() => {
+    new AnimationManager();
+    new ChartManager('investmentChart'); // Initialize Chart with optimization
+  }, 100);
 });
