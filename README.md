@@ -38,7 +38,8 @@ Melhoria do apelo visual através da biblioteca **GSAP (GreenSock Animation Plat
 
 Para esta fase, adotou-se uma estrutura de código profissional e moderna, focada na **decomposição funcional** e **normalização de nomes**:
 
--   **Modularização (ES Modules):** O código JavaScript foi dividido em módulos (`js/modules/`) importados por um ficheiro central (`js/main.js`).
+-   **Modularização JS (ES Modules):** O código JavaScript foi dividido em módulos (`js/modules/`) importados por um ficheiro central (`js/main.js`).
+-   **Arquitetura Modular CSS:** O estilo da página foi refatorado para uma abordagem modular. O ficheiro principal `style.css` atua como entry-point, importando múltiplos ficheiros específicos (ex: `header.css`, `buttons.css`, `responsive.css`) armazenados na pasta `styles/`, facilitando a manutenção e escalabilidade.
 -   **Programação Orientada a Objetos (POO):** Uso de Classes para encapsular a lógica de cada componente (ex: `HeroCarousel`, `ChartManager`).
 -   **Funções de Ordem Superior:** Utilização extensiva de métodos como `map`, `forEach`, `filter` e `every` para manipulação de dados e DOM.
 -   **Estilo e Comentários:** Código normalizado com nomes descritivos e documentação JSDoc em inglês.
@@ -47,7 +48,11 @@ Para esta fase, adotou-se uma estrutura de código profissional e moderna, focad
 ```
 /
 ├── assets/             # Imagens e recursos estáticos
-├── css/                # Folhas de estilo (style.css, style.min.css)
+├── styles/             # Módulos CSS separados por componente/área
+│   ├── base.css
+│   ├── header.css
+│   ├── responsive.css
+│   └── ...
 ├── js/                 # Código JavaScript
 │   ├── modules/        # Módulos independentes (Classes)
 │   │   ├── Animations.js
@@ -58,6 +63,7 @@ Para esta fase, adotou-se uma estrutura de código profissional e moderna, focad
 │   │   └── TiltEffect.js
 │   └── main.js         # Ponto de entrada da aplicação
 ├── index.html          # Estrutura HTML
+├── style.css           # Entry-point CSS (importa módulos de styles/)
 └── README.md           # Documentação
 ```
 
@@ -116,7 +122,8 @@ Improvement of visual appeal using **GSAP (GreenSock Animation Platform)** and *
 
 For this phase, a professional and modern code structure was adopted, focusing on **functional decomposition** and **naming normalization**:
 
--   **Modularization (ES Modules):** JavaScript code was divided into modules (`js/modules/`) imported by a central file (`js/main.js`).
+-   **JS Modularization (ES Modules):** JavaScript code was divided into modules (`js/modules/`) imported by a central file (`js/main.js`).
+-   **CSS Modular Architecture:** The page styling was refactored into a modular approach. The main `style.css` file acts as an entry-point, importing multiple specific files (e.g., `header.css`, `buttons.css`, `responsive.css`) stored in the `styles/` folder, facilitating maintenance and scalability.
 -   **Object-Oriented Programming (OOP):** Use of Classes to encapsulate the logic of each component (e.g., `HeroCarousel`, `ChartManager`).
 -   **Higher-Order Functions:** Extensive use of methods like `map`, `forEach`, `filter`, and `every` for data and DOM manipulation.
 -   **Style and Comments:** Normalized code with descriptive names and JSDoc documentation in English.
@@ -125,7 +132,11 @@ For this phase, a professional and modern code structure was adopted, focusing o
 ```
 /
 ├── assets/             # Images and static resources
-├── css/                # Stylesheets (style.css, style.min.css)
+├── styles/             # CSS Modules separated by component/area
+│   ├── base.css
+│   ├── header.css
+│   ├── responsive.css
+│   └── ...
 ├── js/                 # JavaScript Code
 │   ├── modules/        # Independent Modules (Classes)
 │   │   ├── Animations.js
@@ -136,6 +147,7 @@ For this phase, a professional and modern code structure was adopted, focusing o
 │   │   ├── TiltEffect.js
 │   └── main.js         # Application Entry Point
 ├── index.html          # HTML Structure
+├── style.css           # CSS Entry-point (imports modules from styles/)
 └── README.md           # Documentation
 ```
 
