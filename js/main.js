@@ -2,6 +2,7 @@ import { HeroCarousel } from './modules/HeroCarousel.js';
 import { ScrollManager } from './modules/ScrollManager.js';
 import { TiltEffect } from './modules/TiltEffect.js';
 import { ContactForm } from './modules/ContactForm.js';
+import { NewsletterManager } from './modules/NewsletterManager.js';
 import { AnimationManager } from './modules/Animations.js';
 import { ChartManager } from './modules/ChartManager.js';
 
@@ -27,7 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Initialize Contact Form (Iulia)
   new ContactForm('#contactForm');
 
-  // 5. Initialize Animations (David)
+  // 5. Initialize Newsletter Form (Iulia) - With IndexedDB Persistence
+  new NewsletterManager('#newsletterForm');
+
+  // 6. Initialize Animations (David)
   // Small delay to ensure DOM is ready and layout stabilized
   setTimeout(() => {
     new AnimationManager();

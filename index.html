@@ -74,6 +74,7 @@
             <a href="#areas">Investigação</a>
             <a href="#parceiros">Parceiros</a>
             <a href="#noticias">Notícias</a>
+            <a href="#newsletter">Newsletter</a>
             <a href="#contactos" class="btn btn-primary nav-contact">Contactos</a>
           </nav>
         </div>
@@ -531,6 +532,121 @@
 
             <button type="submit" class="btn btn-primary btn-submit">Enviar Mensagem</button>
           </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  NEWSLETTER SUBSCRIPTION                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="newsletter" id="newsletter" aria-label="Subscrição da Newsletter">
+      <div class="newsletter-inner">
+        <div class="newsletter-header">
+          <span class="newsletter-tag">Fique a par das novidades</span>
+          <h2>Subscreva a Nossa Newsletter</h2>
+          <p>
+            Receba atualizações sobre investigação clínica, formação avançada, oportunidades
+            e notícias do Centro Académico Clínico dos Açores diretamente na sua caixa de correio.
+          </p>
+        </div>
+
+        <!-- Success Message -->
+        <div id="newsletter-success-message" class="newsletter-message" aria-live="polite" aria-atomic="true">
+          <span class="message-icon material-symbols-outlined">check_circle</span>
+          <span>Obrigado pela sua subscrição!</span>
+        </div>
+
+        <!-- Error Message -->
+        <div id="newsletter-error-message" class="newsletter-message" aria-live="polite" aria-atomic="true">
+          <span class="message-icon material-symbols-outlined">error</span>
+          <span>Ocorreu um erro. Por favor, tente novamente.</span>
+        </div>
+
+        <div class="newsletter-content">
+          <!-- Form Section -->
+          <div class="newsletter-form-wrapper">
+            <form id="newsletterForm" class="newsletter-form" novalidate>
+              <div class="form-group">
+                <label for="newsletter-nome">Nome Completo</label>
+                <input
+                  type="text"
+                  id="newsletter-nome"
+                  name="nome"
+                  placeholder="Ex: João Silva"
+                  required
+                  aria-required="true"
+                  aria-describedby="error-newsletter-nome error-newsletter-nome-length error-newsletter-nome-invalid"
+                />
+                <div class="error-message" id="error-newsletter-nome" data-error-type="required">Nome é obrigatório.</div>
+                <div class="error-message" id="error-newsletter-nome-invalid" data-error-type="invalid">Nome deve conter apenas letras e espaços.</div>
+                <div class="error-message" id="error-newsletter-nome-length" data-error-type="length">Nome deve ter pelo menos 2 caracteres.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="newsletter-email">Endereço de Email</label>
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  name="email"
+                  placeholder="Ex: nome@exemplo.com"
+                  required
+                  aria-required="true"
+                  aria-describedby="error-newsletter-email error-newsletter-email-format"
+                />
+                <div class="error-message" id="error-newsletter-email" data-error-type="required">Email é obrigatório.</div>
+                <div class="error-message" id="error-newsletter-email-format" data-error-type="format">Por favor, insira um email válido.</div>
+              </div>
+
+              <button type="submit" class="btn-submit">Subscrever</button>
+
+              <div class="newsletter-stats">
+                Total de <span id="newsletter-subscribers-list">0 subscritores</span>
+              </div>
+            </form>
+          </div>
+
+          <!-- Benefits Section -->
+          <div class="newsletter-benefits">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div class="benefit-content">
+                <h3>Notícias Regulares</h3>
+                <p>Receba atualizações sobre os projetos e iniciativas do CACA.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <span class="material-symbols-outlined">school</span>
+              </div>
+              <div class="benefit-content">
+                <h3>Oportunidades de Formação</h3>
+                <p>Seja o primeiro a saber sobre programas e eventos de formação.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <span class="material-symbols-outlined">science</span>
+              </div>
+              <div class="benefit-content">
+                <h3>Investigação & Inovação</h3>
+                <p>Fique atualizado com os resultados de investigação em saúde.</p>
+              </div>
+            </div>
+
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <span class="material-symbols-outlined">handshake</span>
+              </div>
+              <div class="benefit-content">
+                <h3>Oportunidades de Parcerias</h3>
+                <p>Descubra novas possibilidades de colaboração com o CACA.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
