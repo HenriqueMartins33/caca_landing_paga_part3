@@ -6,6 +6,7 @@ import { NewsletterManager } from './modules/NewsletterManager.js';
 import { AnimationManager } from './modules/Animations.js';
 import { ChartManager } from './modules/ChartManager.js';
 import { News } from './modules/News.js';
+import { EventManager } from './modules/EventManager.js';
 
 /**
  * Main application file.
@@ -21,21 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
   new TiltEffect('.area-card');
 
   // 3. Initialize News Module
-  new News("saude+acores", 3).init(); 
+  new News("saude+acores", 3).init();
+  
+  // 4. Initialize EventManager Module
+  new EventManager('#eventForm');
 
-  // 4. Initialize Hero Carousel (Adriano)
+  // 5. Initialize Hero Carousel (Adriano)
   new HeroCarousel('.hero-carousel', [
     'assets/images/caca-1',
     'assets/images/caca-2'
   ]);
 
-  // 5. Initialize Contact Form (Iulia)
+  // 6. Initialize Contact Form (Iulia)
   new ContactForm('#contactForm');
 
-  // 6. Initialize Newsletter Form (Iulia) - With IndexedDB Persistence
+  // 7. Initialize Newsletter Form (Iulia) - With IndexedDB Persistence
   new NewsletterManager('#newsletterForm');
 
-  // 7. Initialize Animations (David)
+  // 8. Initialize Animations (David)
   // Small delay to ensure DOM is ready and layout stabilized
   setTimeout(() => {
     new AnimationManager();
