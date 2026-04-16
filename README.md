@@ -19,9 +19,9 @@ O objetivo principal desta fase foi **expandir a landing page existente do CACA 
 
 #### 1. Gestão de Eventos com IndexedDB (Pedro Miguel Fonseca Anselmo)
 Implementação de um sistema completo de CRUD para eventos:
-- **Adicionar Evento:** Formulário para inserir novos eventos (título, descrição, data, hora, local).
-- **Visualizar Eventos:** Exibição dinâmica de eventos armazenados na IndexedDB com filtros e ordenação.
-- **Editar Evento:** Modificação de detalhes de eventos existentes com sincronização imediata.
+- **Adicionar Evento:** Formulário para inserir novos eventos (título, descrição, data, local).
+- **Visualizar Eventos:** Exibição de eventos armazenados na IndexedDB.
+- **Editar Evento:** Modificação de detalhes de eventos existentes.
 - **Remover Evento:** Eliminação de eventos com confirmação prévia.
 - **Persistência:** Dados armazenados localmente, mantendo informação entre sessões e funcionando offline.
 
@@ -33,11 +33,11 @@ Sistema robusto de gestão de subscritores:
 - **Feedback Visual:** Mensagens de sucesso/erro claras ao utilizador.
 
 #### 3. Integração com Web APIs Externas (Henrique Cabral Teixeira Moniz Martins)
+- Feed de notícias relevante para saúde/CACA.
+- Cartões de notícias com título, resumo e link.
+- Integração de apis weather e openmaps na gestão de eventos
+  
 
-##### API de Notícias/RSS Feeds
-- Feed de notícias relevante para saúde/CACA (NewsAPI ou RSS pública).
-- Cartões de notícias com imagem, título, resumo e link.
-- Atualização automática e paginação (implementado com News.js).
 
 ## c) Estrutura do Projeto e Tecnologias
 
@@ -50,7 +50,10 @@ js/modules/
 ├── ChartManager.js          # Gestão de gráficos e visualizações de dados
 ├── ContactForm.js           # Validação e processamento de formulário de contacto
 ├── HeroCarousel.js          # Carrossel de imagens da secção herói
-├── News.js                  # Integração com API de Notícias e feed de notícias
+├── EventManager.js          # Gestão de eventos
+├── Weather.js               # Integração api meteorologia
+├── Map.js                   # Integração api mapa
+├── News.js                  # Integração com RSS e feed de notícias
 ├── NewsletterManager.js     # Gestão de subscritores de newsletter
 ├── ScrollManager.js         # Gerenciamento de eventos de scroll
 ├── TiltEffect.js            # Efeito de inclinação em elementos
