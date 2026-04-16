@@ -36,7 +36,7 @@ export class News {
       topNoticias.forEach((noticia, index) => {
         const dataFormatada = new Date(noticia.pubDate).toLocaleDateString('pt-PT');
         document.getElementById(`title-${index}`).textContent = noticia.title;
-        document.getElementById(`date-${index}`).textContent = `Publicado em: ${dataFormatada}`;
+        document.getElementById(`date-${index}`).textContent = `Publicado a ${dataFormatada}`;
         document.getElementById(`link-${index}`).href = noticia.link;
       });
 
